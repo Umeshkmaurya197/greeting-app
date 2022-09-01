@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface IGreetingService {
 
-     public String greetingText();
+    public String greetingText();
 }

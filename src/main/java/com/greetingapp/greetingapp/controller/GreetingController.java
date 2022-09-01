@@ -13,7 +13,7 @@ public class GreetingController {
     IGreetingService iGreetingService;
 
     @GetMapping("/greet")
-    public String greetingText(){
+    public String greetingText() {
         return iGreetingService.greetingText();
     }
 }
