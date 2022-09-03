@@ -21,4 +21,10 @@ public class GreetingController {
         return  userdata.getFirstname()+" "+userdata.getLastname() +" you are great ";
     }
 
+    @GetMapping("/greetandsave")
+    public User greetingUserAndSave(@RequestBody User user){
+        return iGreetingService.greetUserAndSaveRepo(user);
+    }
+
+
 }
