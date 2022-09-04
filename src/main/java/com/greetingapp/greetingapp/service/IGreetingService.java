@@ -2,12 +2,18 @@ package com.greetingapp.greetingapp.service;
 
 import com.greetingapp.greetingapp.entity.User;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface IGreetingService {
 
-    public String greetingText();
+    String greetingText();
 
-    public User greetUserAndSaveRepo(User user);
-    public Optional<User> greetingfindById(int id);
+    User greetUserAndSaveRepo(User user);
+
+    Optional<User> greetingFindById(Integer id);
+
+    List<User> greetingFindAll();
+
+    User editGreetingService(User user,Integer id);
 }
